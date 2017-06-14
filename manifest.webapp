@@ -1,0 +1,22 @@
+{
+  "version": "1.0.0",
+  "name": "Beer World Tour",
+  "launch_path": "/?homescreen=1",
+  "description": "Make World Beers Mapping Great Again",
+  "developer": {
+    "name": "desireyavro",
+    "url": "http://desireyavro.com"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "en",
+  "permissions": {
+  },
+  "locales": {
+    "en": {
+      "name": "Beer World Tour",
+      "description": "Make World Beers Mapping Great Again"
+    }
+  }
+}
