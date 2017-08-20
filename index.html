@@ -1,63 +1,66 @@
 <!doctype html>
-<html lang="">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="description" content="World's Beers, ratings and locations for every taste">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <script async src="site.js"></script>
-  <link rel="manifest" href="manifest.json" />
-  <title>Beer World Tour</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="World's Beers, ratings and locations for every taste">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="@DesireYavro">
+    <script async src="site.js"></script>
+    <link rel="manifest" href="manifest.json" />
+    <title>Beer World Tour</title>
 
-  <!-- favicons -->
-  <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
-<link rel="manifest" href="images/favicons/manifest.json">
-<link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
-<meta name="theme-color" content="#ffffff">
+    <!-- favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicons/favicon-16x16.png">
+    <link rel="manifest" href="images/favicons/manifest.json">
+    <link rel="mask-icon" href="images/favicons/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
 
-<!-- ===========================
+    <!-- ===========================
 FONTS & ICONS
 =========================== -->
-<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-<link href='//fonts.googleapis.com/css?family=Kristi|Alegreya+Sans:300' rel='stylesheet' type='text/css'>
-<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Kristi|Alegreya+Sans:300" rel="stylesheet" type="text/css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <!-- bootstrap component -->
-  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <!-- bootstrap & font awesome components -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-  <!-- Chrome for Android theme color -->
-  <meta name="theme-color" content="#2E3AA1">
+    <!-- Chrome for Android theme color -->
+    <meta name="theme-color" content="#2E3AA1">
 
-  <!-- Web Application Manifest -->
-  <link rel="manifest" href="manifest.json">
+    <!-- Web Application Manifest -->
+    <link rel="manifest" href="manifest.json">
 
-  <!-- Tile color for Win8 -->
-  <meta name="msapplication-TileColor" content="#3372DF">
+    <!-- Tile color for Win8 -->
+    <meta name="msapplication-TileColor" content="#3372DF">
 
-  <!-- Add to homescreen for Chrome on Android -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="application-name" content="BWT">
-  <link rel="icon" sizes="192x192" href="images/touch/android-chrome-192x192.png">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="BWT">
+    <link rel="icon" sizes="192x192" href="images/touch/android-chrome-192x192.png">
 
-  <!-- Add to homescreen for Safari on iOS -->
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="Beer World Tour">
-  <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Beer World Tour">
+    <link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png">
 
-  <!-- Tile icon for Win8 (144x144) -->
-  <meta name="msapplication-TileImage" content="images/favicons/ms-touch-icon-144x144-precomposed.png">
+    <!-- Tile icon for Win8 (144x144) -->
+    <meta name="msapplication-TileImage" content="images/favicons/ms-touch-icon-144x144-precomposed.png">
 
-  <!-- For shared styles, shared-styles.html import in elements.html -->
-  <style is="custom-style" include="shared-styles"></style>
+    <!-- For shared styles, shared-styles.html import in elements.html -->
+    <style is="custom-style" include="shared-styles"></style>
 
 </head>
 
 <body unresolved class="fullbleed layout vertical">
-<span id="browser-sync-binding"></span>
-<!--<template is="dom-bind" id="app">
+    <span id="browser-sync-binding"></span>
+    <!--<template is="dom-bind" id="app">
 
   <pa-auth-data id="data" location='{{location}}' user="{{user}}" todos="{{todos}}" profile="{{profile}}"></pa-auth-data>
 
@@ -93,24 +96,56 @@ FONTS & ICONS
 
 </template>-->
 
+    <nav class="navbar navbar-toggleable-md navbar-static-top bg-faded">
+        <div class="container">
+
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+            <a class="navbar-brand" href="#">
+                <img alt="Brand" src="images/favicons/favicon-32x32.png">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><i class="fa fa-home"> </i><span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Map</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="fav_beers_table.html">Table</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#team">Why</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="mailto:desireyavro@desireyavro.customerly.io?Subject=Get%20in%20touch" target="_top">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
     <div id="map">
-      <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1r3sFIinFy3g09s5i6LoFvSwKbfM" width="1400" height="600"></iframe>
+        <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1r3sFIinFy3g09s5i6LoFvSwKbfM" width="1400" height="600"></iframe>
     </div>
 
-  </template>
+    <footer id="footer">
 
-<footer id="footer">
+        <ul class="menu">
+            <p>&copy; 2017 <a href="desireyavro.com">desireyavro</a> - made with <i class="fa fa-coffee" style="color:brown"></i> and <i class="fa fa-heart" style="color:pink"></i>
+                <a href="fav_beers_table.html" class="btn btn-default" style="background-color:#bbdcf7">Check favorite beers table</a>
+            </p>
+        </ul>
 
-      <ul class="menu">
-          <p>&copy; 2017 <a href="desireyavro.com">desireyavro</a> - made with <i class="fa fa-coffee" style="color:brown"></i> and <i class="fa fa-heart" style="color:pink"></i></a>
-          </p>
-      </ul>
+    </footer>
 
-          </footer>
-
-<!-- build:js scripts/app.js -->
-<!--<script src="scripts/app.js"></script>
+    <!-- build:js scripts/app.js -->
+    <!--<script src="scripts/app.js"></script>
 <script src="../bower_components/leaflet/dist/leaflet-src.js"></script>-->
-<!-- endbuild-->
+    <!-- endbuild-->
 </body>
+
 </html>
